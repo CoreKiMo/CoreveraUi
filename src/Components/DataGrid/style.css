@@ -1,0 +1,97 @@
+.dx-datagrid-column-chooser-mode-select {
+  /* .dx-overlay-wrapper .dx-popup-draggable .dx-overlay-content {
+    color: "red" !important;
+    
+  } */
+
+  .dx-overlay-content
+    .dx-visibility-change-handler
+    .dx-toolbar-items-container
+    .dx-toolbar-center {
+    /* border: 1px solid black; */
+    width: fit-content;
+    margin: 0 !important;
+  }
+
+  /* .dx-overlay-content
+    .dx-visibility-change-handler
+    .dx-toolbar-items-container
+    .dx-toolbar-center
+    .dx-toolbar-label {
+    height: 20px !important;
+    padding: 0 !important;
+  } */
+
+  .dx-overlay-content
+    .dx-visibility-change-handler
+    .dx-toolbar-items-container
+    .dx-toolbar-center
+    .dx-toolbar-label
+    .dx-item-content
+    div {
+    font-size: var(--font-size-15);
+    padding: 0 !important;
+    height: 18px !important;
+    /* color: "red" !important; */
+  }
+
+  .dx-overlay-content .dx-popup-title {
+    margin: -6px 0 !important ;
+    padding: 0 8px !important;
+  }
+
+  .dx-overlay-content .dx-popup-content {
+    padding: 10px 2px 4px !important;
+  }
+  .dx-overlay-content .dx-popup-content .dx-treeview-item {
+    padding: 6px 0 !important;
+  }
+  .dx-overlay-content
+    .dx-popup-content
+    .dx-treeview-item
+    .dx-treeview-expander-icon-stub {
+    width: 4px;
+  }
+
+  .dx-overlay-content .dx-popup-bottom {
+    padding: 2px !important;
+  }
+  .dx-overlay-content .dx-popup-bottom .dx-toolbar-items-container {
+    height: 35px !important;
+  }
+  .dx-overlay-content .dx-popup-bottom .dx-toolbar-before {
+    /* border: 1px solid black; */
+    height: 20px;
+  }
+}
+
+/* Hide vertical scrollbar for DataGrid */
+.dx-datagrid .dx-scrollbar-vertical {
+  display: none !important;
+}
+
+.dx-datagrid .dx-scrollable-scroll {
+  overflow-y: hidden !important;
+}
+
+.dx-datagrid .dx-scrollable-scrollbar.dx-scrollbar-vertical {
+  display: none !important;
+}
+
+
+.dx-data-row.row-prev-year {
+  background-color: #ffebee !important;
+  color: #c62828 !important;
+  border-left: 4px solid #f44336 !important;
+  font-weight: 500 !important;
+}
+.dx-data-row.prev-year-fees-row {
+  background-color: #e0f2fe !important;
+}
+
+.dx-data-row.row-after-end {
+  background-color: #AAAEB0 !important;
+  color: #000000 !important;
+  border-left: 4px solid #000000 !important;
+  font-weight: 500 !important;
+}
