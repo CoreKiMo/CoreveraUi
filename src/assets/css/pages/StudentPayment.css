@@ -1,0 +1,160 @@
+/* StudentPayment Grid Styles */
+.dx-datagrid {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Payment Form Styles */
+.payment-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.payment-form > * {
+  width: 100%;
+}
+
+/* For full width elements */
+.payment-form .dx-textbox,
+.payment-form .dx-textarea {
+  grid-column: 1 / -1;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 80%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Status Cell Styles */
+.status-cell {
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  font-weight: 500;
+}
+
+/* Master Detail Styles */
+.master-detail-content {
+  padding: 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.master-detail-content h4 {
+  color: #333;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.master-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.master-detail-item {
+  display: flex;
+  gap: 8px;
+}
+
+.master-detail-item strong {
+  color: #666;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .payment-form {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 95%;
+    padding: 16px;
+  }
+
+  .master-detail-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* DevExtreme Custom Theme Overrides */
+.dx-button-default {
+  background-color: #007bff;
+  color: white;
+}
+
+.dx-button-default:hover {
+  background-color: #0056b3;
+}
+
+.dx-texteditor {
+  margin-bottom: 8px;
+}
+
+.dx-texteditor.dx-editor-filled {
+  background-color: var(--details-card-bg-paySys);
+}
+
+/* Currency and Number Formatting */
+.dx-numberbox-currency {
+  font-weight: 600;
+  color: #28a745;
+}
+
+/* Export Button Styles */
+.dx-button-has-icon.dx-button-has-text {
+  padding: 6px 12px;
+}
+
+/* Search Panel Styles */
+.dx-searchbox {
+  width: 300px;
+}
+
+/* Toolbar Spacing */
+.dx-toolbar .dx-toolbar-items-container {
+  gap: 12px;
+}
+
+/* Filter Row Styles */
+.dx-datagrid-filter-row {
+  background-color: #f8f9fa;
+}
+
+/* Paging Panel Styles */
+.dx-pager {
+  padding: 8px;
+  background-color: #ffffff;
+} 

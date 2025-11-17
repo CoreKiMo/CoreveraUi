@@ -37,9 +37,8 @@ import DataGrid, {
 } from "devextreme-react/data-grid";
 import { t } from "i18next";
 import { exportDataGrid as exportDataGridToPdf } from "devextreme/pdf_exporter";
-import { GetCurrentLanguageFromLocalStorage } from "../../Services/GetDataFromLocalStorage";
 import { NOTO_FONT_BASE64 } from "../../assets/fonts/fonts";
-import { SearchIcon } from "../../assets/icons/SearchIcon";
+import { SearchIcon } from "../../assets/icons/SearchIcon"; 
 import StickyBar from "../stickyBar/StickyBar";
 import ColumnsGridFilter from "./ColumnsGridFilter";
 import useFilter from "./useFilter";
@@ -105,13 +104,10 @@ export interface DataGridComponentRef {
   getInstance: () => any;
 }
 
-const DataGridComponent = forwardRef<
-  DataGridComponentRef,
-  IDataGridOptions & IProps & any
->(
-  (
+const DataGridComponent = forwardRef<DataGridComponentRef, IDataGridOptions & IProps & any>((
     {
       children,
+      GetCurrentLanguageFromLocalStorage,
       isSubAndHideOptions = false,
       disableDefaultOptions: disableAllOptions,
       fileTitle: fileTitle,
@@ -956,7 +952,7 @@ const DataGridComponent = forwardRef<
               />
             )}
           {servePaging && (
-             <ServerPagin handelServerPagginChange={handelServerPagginChange} allowedPageSizes={allowedPageSizes} pageSize={defaultPageSize || 10} totalPages={totalPages}/>
+             <ServerPagin handelServerPagginChange={handelServerPagginChange} allowedPageSizes={allowedPageSizes} pageSize={defaultPageSize || 10} totalPages={totalPages} GetCurrentLanguageFromLocalStorage={lang}/>
             )}
         </div>
       </div>

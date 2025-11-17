@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, CheckBox, Popover, TagBox, TextBox } from "devextreme-react";
 import { t } from "i18next";
 import { FilterIcon } from "lucide-react";

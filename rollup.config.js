@@ -8,30 +8,38 @@ export default {
   input: 'src/index.ts',
   output: [
     {
-      file: 'dist/index.js',
+      dir: 'dist',
       format: 'cjs',
       sourcemap: true,
-      exports: 'named'
+      exports: 'named',
+      entryFileNames: '[name].js',
+      chunkFileNames: '[name]-[hash].js'
     },
     {
-      file: 'dist/index.esm.js',
+      dir: 'dist',
       format: 'esm',
       sourcemap: true,
-      exports: 'named'
+      exports: 'named',
+      entryFileNames: '[name].esm.js',
+      chunkFileNames: '[name]-[hash].esm.js'
     }
   ],
   plugins: [
     peerDepsExternal(),
-    resolve(),
+    resolve({
+      preferBuiltins: false
+    }),
     commonjs(),
     typescript({ 
       tsconfig: './tsconfig.json',
       declaration: true,
-      declarationDir: './dist'
+      declarationDir: './dist',
+      rootDir: './src'
     }),
     postcss({
       extensions: ['.css'],
       minimize: true,
+      inject: true,
       extract: false
     })
   ],
@@ -41,6 +49,11 @@ export default {
     'devextreme',
     'devextreme-react',
     /^devextreme\//,
-    /^devextreme-react\//
+    /^devextreme-react\//,
+    'file-saver',
+    'exceljs',
+    'jspdf',
+    'i18next',
+    'react/jsx-runtime'
   ]
 };

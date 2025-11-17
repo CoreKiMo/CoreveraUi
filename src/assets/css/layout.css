@@ -1,0 +1,45 @@
+/* Ensure the layout spans full height and positions the footer at the bottom */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .layout-container > .py-4 {
+    flex-grow: 1; /* Main content grows to fill the space */
+  }
+  
+  /* RTL-specific adjustments for Navbar */
+  .navbar {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  .navbar .nav-item {
+    margin-right: 1rem; /* Adjust spacing for RTL */
+  }
+  
+  /* Optional: Add padding for better readability in RTL layouts */
+  body[dir="rtl"] {
+    padding-right: 10px;
+  }
+  
+  .nav-link{
+    border: 1;
+    border-radius: 5%;
+
+  }
+  .nav-link :hover{
+    opacity: 70;
+    color: antiquewhite;
+    
+  }
+  /* Tabs Alignment for RTL and LTR */
+.navbar .nav {
+    justify-content: flex-start; /* Default: Align to left */
+  }
+  
+  body[dir="rtl"] .navbar .nav {
+    justify-content: flex-end; /* Align to right for RTL */
+  }
+  

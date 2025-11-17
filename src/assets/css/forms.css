@@ -1,0 +1,328 @@
+.dx-form-modern .dx-textbox {
+  border-radius: 8px;
+}
+
+.dx-form-modern .error-input {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.dx-form-modern .dx-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.dx-form-modern .dx-field-item-label-text {
+  font-weight: 500;
+  color: #374151;
+}
+
+.dx-form-modern .dx-field-item-required-mark {
+  color: #ef4444;
+}
+
+.form-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.text-box {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+.text-box:focus {
+  border-color: #007bff;
+}
+
+/* Modern Form Styles */
+.modern-popup .dx-popup-content {
+  padding: 0;
+}
+
+.modern-form-container {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.form-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f9fafb;
+}
+
+.form-body {
+  padding: 1.5rem;
+}
+
+.form-footer {
+  padding: 1.25rem;
+  background: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.modern-input {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.modern-input:hover {
+  border-color: #94a3b8;
+}
+
+.modern-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.required {
+  color: #ef4444;
+  margin-left: 0.25rem;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.submit-button {
+  background: #3b82f6 !important;
+  color: white !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.submit-button:hover {
+  background: #2563eb !important;
+  transform: translateY(-1px);
+}
+
+.cancel-button {
+  background: #f3f4f6 !important;
+  color: #4b5563 !important;
+  padding: 0.5rem 1.5rem !important;
+  border-radius: 6px !important;
+  font-weight: 500 !important;
+  transition: all 0.2s ease !important;
+}
+
+.cancel-button:hover {
+  background: #e5e7eb !important;
+}
+
+.modern-switch .dx-switch-container {
+  background: #e5e7eb;
+  border-radius: 999px;
+}
+
+.modern-switch .dx-switch-handle {
+  background: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.modern-switch .dx-switch-on {
+  background: #3b82f6;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.form-group {
+  animation: slideIn 0.3s ease-out forwards;
+}
+
+/* Responsive Design */
+@media (max-width: 640px) {
+  .modern-popup {
+    width: 100% !important;
+    margin: 0 1rem;
+  }
+
+  .form-footer {
+    flex-direction: column-reverse;
+  }
+
+  .form-footer button {
+    width: 100%;
+  }
+}
+
+/* إضافة تحسينات جديدة لتحسين الأزرار وتوزيعها */
+.action-button {
+  margin: 0 5px; /* تباعد بين الأزرار */
+}
+
+.edit-button {
+  background-color: #10b981 !important; /* لون أخضر للأزرار */
+  color: white !important;
+  border-radius: 4px;
+}
+
+.edit-button:hover {
+  background-color: #059669 !important;
+}
+
+.delete-button {
+  background-color: #ef4444 !important; /* لون أحمر للأزرار */
+  color: white !important;
+  border-radius: 4px;
+}
+
+.delete-button:hover {
+  background-color: #dc2626 !important;
+}
+
+/* تنسيقات الجدول */
+.modern-grid {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.modern-grid .dx-datagrid-headers {
+  background-color: #f8fafc;
+  color: #1f2937;
+}
+
+.modern-grid .dx-datagrid-headers .dx-datagrid-text-content {
+  font-weight: 600;
+}
+
+.modern-grid .dx-datagrid-rowsview .dx-row {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modern-grid .dx-datagrid-rowsview .dx-row:hover {
+  background-color: #f9fafb;
+}
+
+/* تنسيقات الأزرار في الجدول */
+.actions-container {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  padding: 4px;
+}
+
+.grid-action-button {
+  min-width: 32px !important;
+  width: 32px !important;
+  height: 32px !important;
+  padding: 0 !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.grid-action-button i {
+  font-size: var(--font-size-16);
+}
+
+.edit-button {
+  background-color: #0ea5e9 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.edit-button:hover {
+  background-color: #0284c7 !important;
+  transform: translateY(-1px);
+}
+
+.delete-button {
+  background-color: #ef4444 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.delete-button:hover {
+  background-color: #dc2626 !important;
+  transform: translateY(-1px);
+}
+
+/* تنسيق حالة الصف */
+.badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: var(--font-size-12);
+  font-weight: 500;
+}
+
+.badge-success {
+  background-color: #22c55e;
+  color: white;
+}
+
+.badge-danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+/* تنسيق شريط البحث */
+.dx-searchbox {
+  border-radius: 6px !important;
+  border-color: #e5e7eb !important;
+}
+
+.dx-searchbox:hover {
+  border-color: #d1d5db !important;
+}
+
+/* تنسيق الصفحات */
+.dx-pages {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.dx-page {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.dx-page.dx-selection {
+  background-color: #0ea5e9 !important;
+  color: white !important;
+} 

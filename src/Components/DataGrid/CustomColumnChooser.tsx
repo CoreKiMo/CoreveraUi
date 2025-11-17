@@ -1,3 +1,4 @@
+import React from 'react';
 import { CheckBox, Popover } from "devextreme-react";
 import { t } from "i18next";
 

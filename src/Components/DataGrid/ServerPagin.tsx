@@ -1,4 +1,4 @@
-import { GetCurrentLanguageFromLocalStorage } from "../../Services/GetDataFromLocalStorage";
+import React from 'react';
 import { useState } from "react";
 
 type ServerPaginProps = {
@@ -6,10 +6,12 @@ type ServerPaginProps = {
   pageSize: number;
   totalPages: number;
   handelServerPagginChange: (i: number, x: number) => void;
+  GetCurrentLanguageFromLocalStorage: () => string;
 };
 
 export default function ServerPagin({
   allowedPageSizes,
+  GetCurrentLanguageFromLocalStorage,
   pageSize: defaultPageSize,
   totalPages,
   handelServerPagginChange,
